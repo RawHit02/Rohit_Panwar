@@ -64,6 +64,11 @@ header{
     padding: 8px 16px;
   }
 }
+@media (min-width: 334px){
+    .container{
+        max-width: 281px;
+    }
+}
 @media (min-width: 380px) {
     .container {
         max-width: 370px;
@@ -931,6 +936,8 @@ footer .copyright {
 
 }
 
+
+
 @media (max-width:380px){
     .section-heading {
         text-align: center;
@@ -1056,7 +1063,7 @@ section.Experience .slider .slide img {
         margin-left:0.4rem;
     }
     section.Explored .card-wrapper {
-        margin-left: -7rem;
+        margin-left: -3.5rem;
         padding-left:0rem;
     }
     section.Experience .slider .slide img {
@@ -1146,7 +1153,7 @@ section.Experience .slider .slide img {
         margin-left:0.4rem;
     }
     section.Explored .card-wrapper {
-        margin-left: -7rem;
+        margin-left: -3.5rem;
         padding-left:0rem;
     }
     section.Experience .slider .slide img {
