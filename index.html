@@ -95,18 +95,14 @@
                         <h6>ROHIT PANWAR</h6>
                         <h1><br>Software <span>Developer </span>& Learner</h1>
                         <p>Currently Living in Dehradun (U.A)<br><strong>💻 -> 🐞 -> 🤞</strong></p>
-                        <button  class="btn" onclick="openResume()">Resume </button>
+                        <button  class="btn" onclick="openResume()">Resume 🖱️ </button>
                         <script>
                             function openResume() {
-                                var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-                                if (isMobile) {
-                                    window.location.href = "./images/Documents/Rezume.pdf";
-                                } else {
-                                    var newWindow = window.open();
-                                    newWindow.document.write('<embed src="./images/Documents/Rezume.pdf" type="application/pdf" width="100%" height="100%" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0;" />');
-                                }
+                                window.open("./images/Documents/Rezume.pdf", "_blank");
                             }
                         </script>
+                        <span><a href="./images/Documents/Rezume.pdf"></a></span>
+
                         
 
 
