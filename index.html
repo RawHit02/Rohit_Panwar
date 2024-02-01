@@ -1,33 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Start of Async Drift Code -->
-    <script>
-        "use strict";
-
-        !function () {
-            var t = window.driftt = window.drift = window.driftt || [];
-            if (!t.init) {
-                if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-                t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
-                    t.factory = function (e) {
-                        return function () {
-                            var n = Array.prototype.slice.call(arguments);
-                            return n.unshift(e), t.push(n), t;
-                        };
-                    }, t.methods.forEach(function (e) {
-                        t[e] = t.factory(e);
-                    }), t.load = function (t) {
-                        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-                        var i = document.getElementsByTagName("script")[0];
-                        i.parentNode.insertBefore(o, i);
-                    };
-            }
-        }();
-        drift.SNIPPET_VERSION = '0.3.1';
-        drift.load('uw8gtv5etde3');
-    </script>
-    <!-- End of Async Drift Code -->
 
 <head>
     <meta charset="UTF-8">
@@ -40,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -58,18 +30,7 @@
         <button class="hamberger">
             <img src="./images/hamberger.svg" alt="">
         </button>
-        <div class="mobile-nav">
-            <button class="times"><img src="./images/cross (2).png"></button>
-            <ul>
-                <img src="./images/rp logo.png" width="280" height="auto" alt="">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#aboutme">About Me</a></li>
-                <li><a href="#learnings">Learnings</a></li>
-                <li><a href="#getin">Get-In</a></li>
-                <li><a href="#achivements">Achivements</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+        
         <header>
             <div class="container">
                 <nav id="main-nav" class="flex items-center justify-between">
@@ -77,7 +38,7 @@
                         <div class="branding">
                             <img src="./images/rp logo.png" width="200" height="auto" alt="">
                         </div>
-                        <div>
+                        <div class="navigation">
                             <a href="#home">Home</a>
                             <a href="#aboutme">About Me</a>
                             <a href="#learnings">Learnings</a>
@@ -89,28 +50,14 @@
                 </nav>
                 <div class="hero flex item-center justify-between">
                     <div class="left flex-1 flex justify-center">
-                        <img src="./images/m@.jpeg" alt="me" height ="100" width="100">
+                        <img src="./images/m@.jpeg" alt="">
                     </div>
                     <div class="right flex-1">
                         <h6>ROHIT PANWAR</h6>
                         <h1><br>Software <span>Developer </span>& Learner</h1>
                         <p>Currently Living in Dehradun (U.A)<br><strong>💻 -> 🐞 -> 🤞</strong></p>
-                        <button  class="btn" onclick="openResume()">Resume 🖱️ </button>
-                        <script>
-                            function openResume() {
-                                window.open("./images/Documents/Rezume.pdf", "_blank");
-                            }
-                        </script>
-                        <span><a href="./images/Documents/Rezume.pdf"></a></span>
-
-                        
-
-
                     </div>
-                    
-
                 </div>
-
             </div>
         </header>
 
@@ -133,47 +80,46 @@
                                 alt=""></a>
                         <a href="https://www.linkedin.com/in/rohit-panwar-/"><img src="./images/linkedin-logo-2430.svg"
                                 alt=""></a>
-                        <a href="https://github.com/RawHit02"><img src="./images/github-svgrepo-com.svg" alt=""></a>
+                        <a href="https://github.com/RawHit13"><img src="./images/github-svgrepo-com.svg" alt=""></a>
                     </div>
                 </div>
             </div>
         </section>
-        
         <section id="learnings" class="Explored">
             <div class="container">
                 <h1 class="section-heading"><span>Knowledge</span> And <span> Featuring</span></h1>
                 <p>"When done well, software is invisible."</p>
                 <div class="card-wrapper">
-                    <div class="card1">
+                    <div class="card">
                         <img src="./images/html.png" alt="">
                         <h2>HTML</h2>
                         <p> ⭐⭐⭐⭐</p>
 
                     </div>
-                    <div class="card1">
+                    <div class="card">
                         <img src="./images/New folder/css.png" alt="">
                         <h2>CSS</h2>
                         <p> ⭐⭐⭐</p>
                     </div>
-                    <div class="card1">
+                    <div class="card">
                         <img src="./images/New folder/js.png" alt="">
                         <h2>Java Script</h2>
                         <p> ⭐⭐⭐</p>
 
                     </div>
-                    <div class="card1">
+                    <div class="card">
                         <img src="./images/New folder/python.png" alt="">
                         <h2>PYTHON</h2>
                         <p> ⭐⭐⭐⭐</p>
 
                     </div>
-                    <div class="card1">
+                    <div class="card">
                         <img src="./images/New folder/java.png" alt="">
                         <h2>JAVA</h2>
                         <p> ⭐⭐⭐</p>
 
                     </div>
-                    <div class="card1">
+                    <div class="card">
                         <img src="./images/New folder/Editor.png" alt="">
                         <h2>Editing</h2>
                         <p> ⭐⭐⭐⭐⭐</p>
@@ -197,7 +143,7 @@
         <section id="achivements" class="Experience">
             <div class="container">
                 <h1 class="section-heading"><span>Explored </span> And <span>Achivements</span></h1>
-                <p> </p>
+                <p>Learned very few things in 2 yrs </p>
                 <div class="slider">
                     <div class="slide">
                         <img src="./images/hacker rank-modified.png" alt="">
@@ -246,35 +192,25 @@
         <section id="contact" class="contact">
             <div class="container">
                 <h1 class="section-heading">Contact <span> Me</span></h1>
-                
                 <div class="card-wrapper">
                     <div class="card">
-                        <a href="https://goo.gl/maps/quiY2WAyTQpAo7Tv9" class="section">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <img src="./images/google-maps.svg" alt="">
-                            <h1>Track me</h1>
-                          
-                        </a>
+                        <img src="./images/google-maps.svg" alt="">
+                        <h1>Track me</h1>
+                        <h6>84, Race Course</h6>
                     </div>
                     <div class="card">
-                        <a href="tel:(91) 8791145418" class="section">
-                            <i class="fas fa-phone"></i>
-                            <img src="./images/call.svg" alt="">
-                            <h1>Call On</h1>
-                        
-                        </a>
+                        <img src="./images/call.svg" alt="">
+                        <h1>Call On</h1>
+                        <h6>+91 8791145418</h6>
                     </div>
-                
                     <div class="card">
-                        <a href="mailto:rohitroody47@gmail.com" class="section">
-                            <i class="fas fa-envelope"></i>
-                            <img src="./images/mail.svg" alt="">
-                            <h1>Mail On</h1>
-                        </a>
+                        <img src="./images/mail.svg " alt="">
+                        <h1>Email At</h1>
+                        <h6>rohit.panwarr22@gmail.com</h6>
                     </div>
-                
                 </div>
         </section>
+        
         <footer>
             <img class="footer-logo" src="./images/rp logo.png" width="400px" height="auto" alt="">
             <div class="copyright">
@@ -282,11 +218,10 @@
             </div>
         </footer>
     </div>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/app.js"></script>
-   
 </body>
 
 </html>
